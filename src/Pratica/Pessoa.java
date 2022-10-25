@@ -45,6 +45,7 @@ public abstract class Pessoa {
         this.experiencia = experiencia;
     }
 
+   // to String para exibir os atributos
     @Override
     public String toString() {
         return "Pessoa{" +
