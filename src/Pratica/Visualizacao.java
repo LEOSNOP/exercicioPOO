@@ -11,6 +11,28 @@ public class Visualizacao {
         this.filme.setViews(this.filme.getViews() + 1);
     }
 
+    public void Avaliar(){
+        this.filme.setAvaliação(5);
+    }
+
+    public void Avaliar(int n){
+        this.filme.setAvaliação(n);
+    }
+
+    public void Avaliar(float porc){
+        int tot = 0;
+        if(porc <= 20){
+            tot = 3;
+        }else if(porc <=50){
+            tot = 5;
+        }else if(porc <= 90){
+            tot = 8;
+        }else{
+            tot = 10;
+        }
+        this.filme.setAvaliação(tot);
+    }
+
     public Gafanhoto getEspectador() {
         return espectador;
     }

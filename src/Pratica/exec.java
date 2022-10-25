@@ -10,7 +10,15 @@ public class exec {
         //criando os videos
 
         Video v1 = new Video("Git");
-        //aplicando os metodos
+
+        // Criando Visualização
+        Visualizacao vis = new Visualizacao(f1, v1);
+
+        vis.Avaliar();
+
+        System.out.println(vis.toString());
+
+
 
 
     }
